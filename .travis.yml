@@ -1,0 +1,7 @@
+language: php
+
+
+script:
+  - sudo ./yawap.sh
+  - ./tests/test.sh
+  
