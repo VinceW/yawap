@@ -3,9 +3,9 @@
 
 # debug output
 echo ""
-echo "read config file from "$HOME
+echo "read config file from $HOME"
 echo ""
-source $HOME"/.yawap.config    "
+source "$HOME/.yawap.config"
 echo $AP_DEVICE
 
 # debug output
