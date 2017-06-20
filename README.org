@@ -21,7 +21,7 @@ Change into the YaWAP directory.
 cd yawap
 #+END_SRC
 
-Configure this script.
+Conopy the sample configuration file.
 #+BEGIN_SRC sh
 cp yawap.config.sample ~/.yawap.config
 #+END_SRC
