@@ -8,7 +8,7 @@ if [ ! -f "$HOME/.yawap.config" ]; then
 fi
 
 # Load configuration file.
-source "$HOME/.yawap.conf"
+source "$HOME/.yawap.config"
 
 # Update repository and install some packages
 apt-get update
