@@ -8,6 +8,33 @@ Yet Another Wireless Access Point
 
 Creates a Wireless Access Point
 
+** How
+
+Download the YaWAP repository.
+#+BEGIN_SRC sh
+git clone https://github.com/vincew/yawap.git
+#+END_SRC
+
+Change into the YaWAP directory.
+#+BEGIN_SRC sh
+cd yawap
+#+END_SRC
+
+Edit the YaWAP script to match your configuration.
+#+BEGIN_SRC sh
+nano yawap.sh
+#+END_SRC
+Most likely you only need to adapt the AP_DEVICE and the WAN_DEVICE
+variables.
+
+Run the YaWAP script
+#+BEGIN_SRC sh
+./yawap.sh
+#+END_SRC
+run the commands at the end of the script (see screen output) in seperate
+terminal windows (each command in it's own window).
+
+
 ** Credits
 - https://www.offensive-security.com/kali-linux/kali-linux-evil-wireless-access-point/
 
