@@ -28,7 +28,7 @@ HOSTAPD_CONF="/etc/hostapd/hostapd.conf"
 
 # Update repository and install some packages
 apt-get update
-apt-get install -y hostapd dnsmasq wireless-tools iw wvdial
+apt-get install -y hostapd dnsmasq wireless-tools net-tools iw wvdial
 
 # Once everything is installed, we configure dnsmasq to serve DHCP and
 # DNS on the wireless interface and then start the dnsmasq service.
