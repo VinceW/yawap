@@ -1,30 +1,14 @@
 #!/usr/bin/env bash
 
-# Change those variables to match your configuration.
-# ---------------------------------------------------
+# Check if config file exists.
+if [ ! -f "$HOME/.yawap.config" ]; then
+    echo "Error: Configuration file not found!"
+    echo "Exit now"
+    exit 1
+fi
 
-# AP_DEVICE
-# Uncomment the device on which the accesspoint is working.
-AP_DEVICE="lo"
-#AP_DEVICE="wlan0"
-#AP_DEVICE="wlan1"
-
-# WAN_DEVICE
-# Uncomment the device on which Internet is available
-WAN_DEVICE="eth0"
-#WAN_DEVICE="eth1"
-
-DNSMASQ_CONF="/etc/dnsmasq.conf"
-HOSTAPD_CONF="/etc/hostapd/hostapd.conf"
-
-# To prevent Error message:
-#   hostapd nl80211: could not configure driver mode
-# comment out both lines below
-#nmcli radio wifi off
-#sudo rfkill unblock wlan
-
-# Do NOT make changes below this line !!
-# --------------------------------------
+# Load configuration file.
+source "$HOME/.yawap.conf"
 
 # Update repository and install some packages
 apt-get update

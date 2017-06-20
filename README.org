@@ -8,6 +8,7 @@ Yet Another Wireless Access Point
 
 Creates a Wireless Access Point
 
+
 ** How
 
 Download the YaWAP repository.
@@ -20,9 +21,14 @@ Change into the YaWAP directory.
 cd yawap
 #+END_SRC
 
-Edit the YaWAP script to match your configuration.
+Configure this script.
 #+BEGIN_SRC sh
-nano yawap.sh
+cp yawap.config.sample ~/.yawap.config
+#+END_SRC
+
+Edit the configuration file.
+#+BEGIN_SRC sh
+nano ~/.yawap.config
 #+END_SRC
 Most likely you only need to adapt the AP_DEVICE and/or the WAN_DEVICE
 variables.
