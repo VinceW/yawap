@@ -1,6 +1,8 @@
 language: php
 
-
+before_script:
+  - cp ./yawap.config.sample $HOME/.yawap.config
+  
 script:
   - sudo ./yawap.sh
   - ./tests/test.sh

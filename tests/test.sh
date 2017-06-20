@@ -3,10 +3,9 @@
 
 # debug output
 echo ""
-echo "source from $PWD"
+echo "read config file from "$HOME
 echo ""
-BASE_DIR=$PWD
-source $BASE_DIR"/config/config.txt"
+source $HOME"/.yawap.config    "
 echo $AP_DEVICE
 
 # debug output
