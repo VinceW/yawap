@@ -24,7 +24,7 @@ Edit the YaWAP script to match your configuration.
 #+BEGIN_SRC sh
 nano yawap.sh
 #+END_SRC
-Most likely you only need to adapt the AP_DEVICE and the WAN_DEVICE
+Most likely you only need to adapt the AP_DEVICE and/or the WAN_DEVICE
 variables.
 
 Run the YaWAP script
