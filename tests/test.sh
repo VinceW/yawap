@@ -5,7 +5,13 @@
 echo ""
 echo "read config file from $HOME"
 echo ""
-source "$HOME/.yawap.config"
+CONFIG_FILE="$HOME/.yawap.config"
+if [ ! -f "$CONFIG_FILE" ]; then
+    echo "Error: Configuration file not found!"
+    echo "Exit now"
+    exit 1
+fi
+source "$CONFIG_FILE"
 echo $AP_DEVICE
 
 # debug output
